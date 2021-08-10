@@ -1,0 +1,3 @@
+include ':sert'
+include ':app'
+rootProject.name = "ShareErrorReportTo"
