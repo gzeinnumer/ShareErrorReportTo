@@ -6,12 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import java.io.IOException;
-
-import okhttp3.RequestBody;
-import okio.Buffer;
-import retrofit2.Response;
-
 public class ShareErrorDialog extends ShareErrorDialogSetting {
 
     public static final String TAG = "CustomDialog";
