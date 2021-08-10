@@ -23,7 +23,7 @@ abstract class BaseDialog extends DialogFragment {
 
     private final boolean cancelable = false;
     protected boolean canceledOnTouchOutside = false;
-    private double canvasWidth = 0.9;
+    private final double canvasWidth = 0.8;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

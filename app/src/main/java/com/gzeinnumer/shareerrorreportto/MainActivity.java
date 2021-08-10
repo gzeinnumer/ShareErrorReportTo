@@ -1,13 +1,10 @@
 package com.gzeinnumer.shareerrorreportto;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-import com.gzeinnumer.sert.ShareErrorDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.IOException;
-import java.nio.Buffer;
+import com.gzeinnumer.sert.ShareErrorDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String error = "error";
-        new ShareErrorDialog(getSupportFragmentManager()).setErrorMessage(error).show();
+        new ShareErrorDialog(getSupportFragmentManager()).builder().setErrorMessage(error).show();
     }
 }

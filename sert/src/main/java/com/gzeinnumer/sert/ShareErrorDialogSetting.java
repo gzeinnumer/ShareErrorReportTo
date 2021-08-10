@@ -1,11 +1,9 @@
 package com.gzeinnumer.sert;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,18 +12,13 @@ import androidx.annotation.Nullable;
 
 public class ShareErrorDialogSetting extends BaseDialog {
 
-    protected ShareErrorDialog.OnCancelPressed onCancelPressed;
-
-    protected Drawable shapeCanvas = null;
     private View _view;
-    private LinearLayout _dialogCanvas;
     private TextView tvError;
     private ImageView whatsapp;
     private ImageView btn_cancel;
     protected String error = null;
 
     private void initView() {
-        _dialogCanvas = _view.findViewById(R.id.dialog_canvas);
         tvError = _view.findViewById(R.id.tv_error);
         whatsapp = _view.findViewById(R.id.whatsapp);
         btn_cancel = _view.findViewById(R.id.btn_cancel);
@@ -46,8 +39,6 @@ public class ShareErrorDialogSetting extends BaseDialog {
     }
 
     private void initDesign() {
-        if (shapeCanvas != null)
-            _dialogCanvas.setBackground(shapeCanvas);
 
         if (error != null)
             tvError.setText(error);
