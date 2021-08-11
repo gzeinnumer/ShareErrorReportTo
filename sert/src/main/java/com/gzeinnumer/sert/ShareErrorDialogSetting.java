@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -13,13 +12,11 @@ import androidx.annotation.Nullable;
 public class ShareErrorDialogSetting extends BaseDialog {
 
     private View _view;
-    private TextView tvError;
     private ImageView whatsapp;
     private ImageView btn_cancel;
     protected String error = null;
 
     private void initView() {
-        tvError = _view.findViewById(R.id.tv_error);
         whatsapp = _view.findViewById(R.id.whatsapp);
         btn_cancel = _view.findViewById(R.id.btn_cancel);
     }
@@ -39,10 +36,7 @@ public class ShareErrorDialogSetting extends BaseDialog {
     }
 
     private void initDesign() {
-
-        if (error != null)
-            tvError.setText(error);
-    }
+     }
 
     private void initOnClick() {
         whatsapp.setOnClickListener(new View.OnClickListener() {
