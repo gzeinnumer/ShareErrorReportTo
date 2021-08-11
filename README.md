@@ -58,7 +58,6 @@ dependencies {
 
 ### **Share.**
 Share Error Via Wahatapps
-> **Java**
 ```java
 String error = "error";
 new ShareErrorDialog(getSupportFragmentManager()).builder().setErrorMessage(error).show();
