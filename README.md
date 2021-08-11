@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibUtils/blob/master/preview/bg.jpg"/>
-</p>
-
 <h1 align="center">
     ShareErrorReportTo
 </h1>
