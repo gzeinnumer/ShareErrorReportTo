@@ -58,6 +58,12 @@ Share Error Via Wahatapps
 String error = "error";
 new ShareErrorDialog(getSupportFragmentManager()).builder().setErrorMessage(error).show();
 ```
+[Log Retrofit Response](https://github.com/gzeinnumer/MyReminder#object-tojson---json-toobject-1)
+```java
+String request = gson.toJson(data);
+String endpoint = "localhost/api/store";
+String error = endpoint + "_" + request;
+```
 
 ---
 # Example Code/App
