@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.0.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.0.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -36,8 +36,11 @@ allprojects {
 
 // build.gradle app/module
 dependencies {
-  ...
-  implementation 'com.github.gzeinnumer:ShareErrorReportTo:version'
+    ...
+    implementation 'com.github.gzeinnumer:ShareErrorReportTo:version'
+
+    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-version'
+    //check last version on https://github.com/gzeinnumer/SimpleMaterialStyle
 }
 ```
 
@@ -72,7 +75,7 @@ String error = endpoint + "_" + request;
 
 ---
 # Version
-- **1.0.0**
+- **1.0.1**
   - First Release
 
 ---
